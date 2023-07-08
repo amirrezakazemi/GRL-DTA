@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+torch = "*"
+torch-geometric = "*"
+networks = "*"
+pandas = "*"
+numpy = "*"
+rdkit = "*"
+optuna = "*"
+mlflow = "*"
+boto3 = "*"
+flask = "*"
+pytorch-lightning = "==2.0.1"
+gunicorn = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"

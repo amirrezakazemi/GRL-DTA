@@ -21,6 +21,7 @@ This project aims to predict drug-target affinity using a Graph Neural Network (
 - `data_prep.py`: Contains data preprocessing functions and a custom dataset class for loading and processing the dataset.
 - `model.py`: Defines the GCN model architecture using PyTorch and PyTorch Lightning.
 - `train.py`: Implements hyperparameter tuning using the Optuna library and trains the GCN model.
+- `app.py`: Deploys the trained model using Flask to provide real-time predictions.
 
 ## Getting Started
 
@@ -30,10 +31,10 @@ This project aims to predict drug-target affinity using a Graph Neural Network (
 
    ```bash
    git clone https://github.com/your-username/GRL-DTA.git
-   cd GRL-DTA`
+   cd GRL-DTA‍
 
 2.  Install the required packages using Pipenv. Navigate to the project directory and run the following command:
-
+ 
     `pipenv install`
 
     This will create a virtual environment and install all the necessary Python dependencies listed in the `Pipfile.lock` file.

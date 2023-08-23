@@ -23,18 +23,18 @@ This project aims to predict drug-target affinity using a Graph Neural Network (
 - `train.py`: Implements hyperparameter tuning using the Optuna library and trains the GCN model.
 
 ## Getting Started
-
+```bash
 git clone https://github.com/your-username/GRL-DTA.git
-cd GRL-DTA
+cd GRL-DTA `
 
 You can install the required Python packages using the provided `Pipfile` and `Pipfile.lock`:
 
 ```bash
-pipenv install
+pipenv install`
 
 This will create a virtual environment and install all the necessary Python dependencies listed in the `Pipfile.lock file.
 
 Activate the virtual environment:
 
 ```bash
-pipenv shell
+pipenv shell`

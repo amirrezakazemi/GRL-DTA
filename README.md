@@ -32,14 +32,18 @@ Clone this repository:
    cd GRL-DTA
 
 
+
 You can install the required Python packages using the provided `Pipfile` and `Pipfile.lock`:
 
 ```bash
 pipenv install
 
-This will create a virtual environment and install all the necessary Python dependencies listed in the `Pipfile.lock file.
 
+
+This will create a virtual environment and install all the necessary Python dependencies listed in the `Pipfile.lock file.
 Activate the virtual environment:
+
+
 
 ```bash
 pipenv shell

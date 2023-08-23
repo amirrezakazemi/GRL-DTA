@@ -6,12 +6,8 @@ This repository contains code for predicting drug-target affinity using a graph 
 
 - [Introduction](#introduction)
 - [Getting Started](#getting-started)
-- [Usage](#usage)
-  - [Data Preparation](#data-preparation)
-  - [Model Training](#model-training)
-  - [Model Evaluation](#model-evaluation)
-- [Results](#results)
-- [Contributing](#contributing)
+- [Results](#Results)
+- [Contributing](#Contributing) 
 - [License](#license)
 
 ## Introduction
@@ -46,4 +42,17 @@ This project aims to predict drug-target affinity using a Graph Neural Network (
     This command will start a Docker container based on the `dta-predictor` image and map port `9696` on the host to port `9696` in the container.
 
 4.  The Flask application should now be accessible at `http://localhost:9696`. You can make predictions by sending POST requests to the `/app` endpoint.
+
+## Results
+
+
+You can find the results of model training and evaluation in the MLflow tracking server. The experiment named "drug-target-affinity-exp" contains logged hyperparameters, metrics, and artifacts.
+
+## Contributing
+
+Contributions to this project are welcome! If you find any issues or want to improve the code, feel free to open pull requests or issues in this repository.
+
+## License
+
+This project is licensed under the [MIT License](https://chat.openai.com/c/LICENSE).
     

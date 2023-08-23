@@ -6,8 +6,6 @@ This repository contains code for predicting drug-target affinity using a graph 
 
 - [Introduction](#introduction)
 - [Getting Started](#getting-started)
-  - [Dependencies](#dependencies)
-  - [Installation](#installation)
 - [Usage](#usage)
   - [Data Preparation](#data-preparation)
   - [Model Training](#model-training)
@@ -26,17 +24,14 @@ This project aims to predict drug-target affinity using a Graph Neural Network (
 
 ## Getting Started
 
-### Dependencies
+To get started with this project, follow these steps:
 
-To run the code in this repository, you need the following dependencies:
+1. Clone this repository:
 
-- Python (>=3.6)
-- PyTorch (>=1.6)
-- PyTorch Lightning (>=1.0)
-- Optuna (>=2.0)
-- RDKit (for chemical structure processing)
-- NetworkX (for graph manipulation)
-- ...
+   ```bash
+   git clone https://github.com/your-username/GRL-DTA.git
+   cd GRL-DTA
+
 
 You can install the required Python packages using the provided `Pipfile` and `Pipfile.lock`:
 

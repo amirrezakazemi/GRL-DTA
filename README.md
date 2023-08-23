@@ -20,7 +20,7 @@ This project aims to predict drug-target affinity using a Graph Neural Network (
 
 - `data_prep.py`: Contains data preprocessing functions and a custom dataset class for loading and processing the dataset.
 - `model.py`: Defines the GCN model architecture using PyTorch and PyTorch Lightning.
-- `train.py`: Implements hyperparameter tuning using the Optuna library and trains the GCN model.
+- `train.py`: Implements hyperparameter tuning using MLflow and Optuna libraries and trains the GCN model.
 - `app.py`: Deploys the trained model using Flask to provide real-time predictions.
 
 ## Getting Started
@@ -33,14 +33,17 @@ This project aims to predict drug-target affinity using a Graph Neural Network (
    git clone https://github.com/your-username/GRL-DTA.git
    cd GRL-DTA‍
 
-2.  Install the required packages using Pipenv. Navigate to the project directory and run the following command:
- 
-    `pipenv install`
+2.  Build the Docker image using the following command:
 
-    This will create a virtual environment and install all the necessary Python dependencies listed in the `Pipfile.lock` file.
+    `docker build -t dta-predictor .`
 
-3.  Activate the virtual environment:
-    `pipenv shell`
+    This command will build a Docker image named `dta-predictor` using the instructions in the `Dockerfile`.
 
-    This will activate the virtual environment, allowing you to run the scripts and interact with the project's dependencies.
+3.  Once the image is built, you can run a container using the following command:
+
+    `docker run -p 9696:9696 dta-predictor`
+
+    This command will start a Docker container based on the `dta-predictor` image and map port `9696` on the host to port `9696` in the container.
+
+4.  The Flask application should now be accessible at `http://localhost:9696`. You can make predictions by sending POST requests to the `/app` endpoint.
     

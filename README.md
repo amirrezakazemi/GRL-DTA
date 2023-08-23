@@ -23,6 +23,7 @@ This project aims to predict drug-target affinity using a Graph Neural Network (
 - `train.py`: Implements hyperparameter tuning using the Optuna library and trains the GCN model.
 
 ## Getting Started
+
 `To get started with this project, follow these steps:
 
 1. Clone this repository:
@@ -38,3 +39,9 @@ This project aims to predict drug-target affinity using a Graph Neural Network (
     This will create a virtual environment and install all the necessary Python dependencies listed in the `Pipfile.lock` file.
 
 3.  Activate the virtual environment:
+Activate the virtual environment:
+
+`pipenv shell`
+
+This will activate the virtual environment, allowing you to run the scripts and interact with the project's dependencies.
+    
